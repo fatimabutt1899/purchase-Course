@@ -1,0 +1,43 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-purchasecourse-dev-131516-authRole",
+      "UnauthRoleArn": "arn:aws:iam::037767305626:role/amplify-purchasecourse-dev-131516-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::037767305626:role/amplify-purchasecourse-dev-131516-authRole",
+      "Region": "us-west-2",
+      "DeploymentBucketName": "amplify-purchasecourse-dev-131516-deployment",
+      "UnauthRoleName": "amplify-purchasecourse-dev-131516-unauthRole",
+      "StackName": "amplify-purchasecourse-dev-131516",
+      "StackId": "arn:aws:cloudformation:us-west-2:037767305626:stack/amplify-purchasecourse-dev-131516/5d6a7130-cbda-11ee-9719-02165b53c8e7",
+      "AmplifyAppId": "dumcqgpqxakyv",
+      "APIGatewayAuthURL": "https://s3.amazonaws.com/amplify-purchasecourse-dev-131516-deployment/amplify-cfn-templates/api/APIGatewayAuthStack.json"
+    },
+    "categories": {
+      "auth": {
+        "purchasecourse897a0847": {}
+      },
+      "function": {
+        "purchasecourse29f8e37c": {
+          "deploymentBucketName": "amplify-purchasecourse-dev-131516-deployment",
+          "s3Key": "amplify-builds/purchasecourse29f8e37c-4934634c687176686b6f-build.zip"
+        },
+        "AdminAccessFunction": {
+          "deploymentBucketName": "amplify-purchasecourse-dev-131516-deployment",
+          "s3Key": "amplify-builds/AdminAccessFunction-59726868764d39756b32-build.zip"
+        },
+        "UserAccessFunction": {
+          "deploymentBucketName": "amplify-purchasecourse-dev-131516-deployment",
+          "s3Key": "amplify-builds/UserAccessFunction-547a4d39646e324e7350-build.zip"
+        }
+      },
+      "storage": {
+        "CourseTable1": {}
+      },
+      "api": {
+        "coursesapi": {},
+        "userapi": {},
+        "purchaseCourseGraphQL": {}
+      }
+    }
+  }
+}

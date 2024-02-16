@@ -1,0 +1,11 @@
+{
+  "AppSyncApiName": "purchaseCourseGraphQL",
+  "DynamoDBBillingMode": "PAY_PER_REQUEST",
+  "DynamoDBEnableServerSideEncryption": false,
+  "AuthCognitoUserPoolId": {
+    "Fn::GetAtt": [
+      "authpurchasecourse897a0847",
+      "Outputs.UserPoolId"
+    ]
+  }
+}

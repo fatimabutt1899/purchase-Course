@@ -1,0 +1,67 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 10vmin;
+  pointer-events: none;
+}
+
+ 
+
+.App-header {
+  background-color: #002061;
+  min-height: 5vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.courseList {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-around; */
+}
+
+.columnHeadings {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  font-weight: bold;
+  border-bottom: 2px solid #ccc; /* Add a border line below the headings */
+}
+
+.columnHeadings > div {
+  flex: 1; /* Equal width for each column */
+  text-align: start; /* Center-align the text within each column */
+  padding: 5px;
+}
+
+.courseCard {
+  display: flex;
+  justify-content: space-around;
+  padding: 5px;
+ align-items: center;
+ 
+}
+
+.courseContent{
+  display: contents;
+  justify-content: space-around;
+  padding: 5px;
+  /* flex: 1; */
+}
+
+.courseTitle {
+  font-weight: bold;
+  font-size: calc(3px + 2.5vmin);
+  /* justify-content: space-around; */
+  padding: 5px;
+}
+
