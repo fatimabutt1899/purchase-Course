@@ -149,6 +149,13 @@
       "service": "Lambda"
     }
   },
+  "hosting": {
+    "amplifyhosting": {
+      "lastPushTimeStamp": "2024-02-16T12:19:21.324Z",
+      "service": "amplifyhosting",
+      "type": "cicd"
+    }
+  },
   "parameters": {
     "AMPLIFY_function_AdminAccessFunction_deploymentBucketName": {
       "usedBy": [
@@ -195,6 +202,22 @@
         {
           "category": "function",
           "resourceName": "purchasecourse29f8e37c"
+        }
+      ]
+    },
+    "AMPLIFY_hosting_amplifyhosting_appId": {
+      "usedBy": [
+        {
+          "category": "hosting",
+          "resourceName": "amplifyhosting"
+        }
+      ]
+    },
+    "AMPLIFY_hosting_amplifyhosting_type": {
+      "usedBy": [
+        {
+          "category": "hosting",
+          "resourceName": "amplifyhosting"
         }
       ]
     }

@@ -37,6 +37,12 @@
         "coursesapi": {},
         "userapi": {},
         "purchaseCourseGraphQL": {}
+      },
+      "hosting": {
+        "amplifyhosting": {
+          "appId": "dumcqgpqxakyv",
+          "type": "cicd"
+        }
       }
     }
   }
