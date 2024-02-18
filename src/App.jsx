@@ -83,7 +83,7 @@ function App() {
                                     <Paper variant='outlined' elevation={0}>
                                         <div className="courseCard">
                                             <div className='courseContent'>
-                                                <div className='courseId'>{course.id}</div>
+                                                <div className='courseId'>{course.courseID}</div>
                                                 <div className='courseTitle'>{course.title}</div>
                                                 <div className='coursePrice'>{course.price}</div>
                                             </div>
