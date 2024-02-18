@@ -1,15 +1,20 @@
 import React, { useEffect, useState } from 'react';
 import './App.css';
-import awsconfig from './aws-exports';
+import amplifyconfig from './amplifyconfiguration.json';
 import { withAuthenticator, Authenticator } from '@aws-amplify/ui-react';
 import '@aws-amplify/ui-react/styles.css';
 import { Amplify } from 'aws-amplify';
-import { listCourses } from './graphql/queries';
 import { generateClient } from '@aws-amplify/api';
 import { Paper, IconButton } from '@mui/material';
 import AddShoppingCartIcon from '@mui/icons-material/AddShoppingCart';
+import { get, ApiError } from 'aws-amplify/api';
 
-Amplify.configure(awsconfig);
+// import { fetchCourses } from './api'; // Assuming you have an api.js file where you define API functions
+import { Courses } from './models/schema'; // Import the Course interface from your schema
+
+
+
+Amplify.configure(amplifyconfig);
 
 const client = generateClient();
 
@@ -20,23 +25,43 @@ function App() {
         fetchCourses();
     }, []);
 
-    useEffect(() => {
-        // Fetch courses whenever the authentication state changes
-        fetchCourses();
-    }, []);
 
     async function fetchCourses() {
+        const apiName = 'coursesapi';
+        const path = '/courses';
+    
         try {
-            const courseData = await client.graphql({
-                query: listCourses,
+            const restOperation = get({
+                apiName,
+                path,
             });
-            const courseList = courseData.data.listCourses.items;
-            console.log('course List', courseList);
-            setCourses(courseList);
+            const response = await restOperation.response;
+    
+            if (!response.body) {
+                throw new Error('No data received from the API');
+            }
+    
+            const reader = response.body.getReader();
+            const decoder = new TextDecoder('utf-8');
+            let data = '';
+    
+            while (true) {
+                const { done, value } = await reader.read();
+                if (done) break;
+                data += decoder.decode(value, { stream: true });
+            }
+    
+            const jsonData = JSON.parse(data);
+            console.log('Courses:', jsonData);
+            // return jsonData;
+            setCourses(jsonData); // Update state with fetched courses
         } catch (error) {
-            console.error('Error on fetching courses: ', error);
+            console.error('Error fetching courses:', error);
+            throw error;
         }
     }
+    
+    
 
     return (
         <Authenticator onStateChange={() => fetchCourses()}>
