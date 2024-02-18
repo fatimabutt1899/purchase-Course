@@ -19,7 +19,7 @@
       "function": {
         "purchasecourse29f8e37c": {
           "deploymentBucketName": "amplify-purchasecourse-dev-131516-deployment",
-          "s3Key": "amplify-builds/purchasecourse29f8e37c-4934634c687176686b6f-build.zip"
+          "s3Key": "amplify-builds/purchasecourse29f8e37c-7779565742644e734c36-build.zip"
         },
         "AdminAccessFunction": {
           "deploymentBucketName": "amplify-purchasecourse-dev-131516-deployment",
