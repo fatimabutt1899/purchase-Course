@@ -13,20 +13,6 @@
       ],
       "providerPlugin": "awscloudformation",
       "service": "API Gateway"
-    },
-    "userapi": {
-      "dependsOn": [
-        {
-          "attributes": [
-            "Name",
-            "Arn"
-          ],
-          "category": "function",
-          "resourceName": "purchasecourse29f8e37c"
-        }
-      ],
-      "providerPlugin": "awscloudformation",
-      "service": "API Gateway"
     }
   },
   "auth": {
@@ -58,44 +44,6 @@
     }
   },
   "function": {
-    "AdminAccessFunction": {
-      "build": true,
-      "dependsOn": [
-        {
-          "attributeEnvMap": {
-            "Arn": "TABLE_ARN",
-            "Name": "TABLE_NAME"
-          },
-          "attributes": [
-            "Name",
-            "Arn"
-          ],
-          "category": "storage",
-          "resourceName": "CourseTable1"
-        }
-      ],
-      "providerPlugin": "awscloudformation",
-      "service": "Lambda"
-    },
-    "UserAccessFunction": {
-      "build": true,
-      "dependsOn": [
-        {
-          "attributeEnvMap": {
-            "Arn": "TABLE_ARN",
-            "Name": "TABLE_NAME"
-          },
-          "attributes": [
-            "Name",
-            "Arn"
-          ],
-          "category": "storage",
-          "resourceName": "CourseTable1"
-        }
-      ],
-      "providerPlugin": "awscloudformation",
-      "service": "Lambda"
-    },
     "purchasecourse29f8e37c": {
       "build": true,
       "dependsOn": [
@@ -124,38 +72,6 @@
     }
   },
   "parameters": {
-    "AMPLIFY_function_AdminAccessFunction_deploymentBucketName": {
-      "usedBy": [
-        {
-          "category": "function",
-          "resourceName": "AdminAccessFunction"
-        }
-      ]
-    },
-    "AMPLIFY_function_AdminAccessFunction_s3Key": {
-      "usedBy": [
-        {
-          "category": "function",
-          "resourceName": "AdminAccessFunction"
-        }
-      ]
-    },
-    "AMPLIFY_function_UserAccessFunction_deploymentBucketName": {
-      "usedBy": [
-        {
-          "category": "function",
-          "resourceName": "UserAccessFunction"
-        }
-      ]
-    },
-    "AMPLIFY_function_UserAccessFunction_s3Key": {
-      "usedBy": [
-        {
-          "category": "function",
-          "resourceName": "UserAccessFunction"
-        }
-      ]
-    },
     "AMPLIFY_function_purchasecourse29f8e37c_deploymentBucketName": {
       "usedBy": [
         {

@@ -20,22 +20,13 @@
         "purchasecourse29f8e37c": {
           "deploymentBucketName": "amplify-purchasecourse-dev-131516-deployment",
           "s3Key": "amplify-builds/purchasecourse29f8e37c-7047326d386f78427034-build.zip"
-        },
-        "AdminAccessFunction": {
-          "deploymentBucketName": "amplify-purchasecourse-dev-131516-deployment",
-          "s3Key": "amplify-builds/AdminAccessFunction-59726868764d39756b32-build.zip"
-        },
-        "UserAccessFunction": {
-          "deploymentBucketName": "amplify-purchasecourse-dev-131516-deployment",
-          "s3Key": "amplify-builds/UserAccessFunction-547a4d39646e324e7350-build.zip"
         }
       },
       "storage": {
         "CourseTable1": {}
       },
       "api": {
-        "coursesapi": {},
-        "userapi": {}
+        "coursesapi": {}
       },
       "hosting": {
         "amplifyhosting": {
