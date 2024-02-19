@@ -14,39 +14,6 @@
       "providerPlugin": "awscloudformation",
       "service": "API Gateway"
     },
-    "purchaseCourseGraphQL": {
-      "dependsOn": [
-        {
-          "attributes": [
-            "UserPoolId"
-          ],
-          "category": "auth",
-          "resourceName": "purchasecourse897a0847"
-        }
-      ],
-      "output": {
-        "authConfig": {
-          "additionalAuthenticationProviders": [
-            {
-              "apiKeyConfig": {
-                "apiKeyExpirationDate": "2024-02-22T20:03:16.431Z",
-                "apiKeyExpirationDays": 7,
-                "description": ""
-              },
-              "authenticationType": "API_KEY"
-            }
-          ],
-          "defaultAuthentication": {
-            "authenticationType": "AMAZON_COGNITO_USER_POOLS",
-            "userPoolConfig": {
-              "userPoolId": "authpurchasecourse897a0847"
-            }
-          }
-        }
-      },
-      "providerPlugin": "awscloudformation",
-      "service": "AppSync"
-    },
     "userapi": {
       "dependsOn": [
         {
@@ -55,7 +22,7 @@
             "Arn"
           ],
           "category": "function",
-          "resourceName": "UserAccessFunction"
+          "resourceName": "purchasecourse29f8e37c"
         }
       ],
       "providerPlugin": "awscloudformation",

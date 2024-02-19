@@ -19,7 +19,7 @@
       "function": {
         "purchasecourse29f8e37c": {
           "deploymentBucketName": "amplify-purchasecourse-dev-131516-deployment",
-          "s3Key": "amplify-builds/purchasecourse29f8e37c-7779565742644e734c36-build.zip"
+          "s3Key": "amplify-builds/purchasecourse29f8e37c-7047326d386f78427034-build.zip"
         },
         "AdminAccessFunction": {
           "deploymentBucketName": "amplify-purchasecourse-dev-131516-deployment",
@@ -35,8 +35,7 @@
       },
       "api": {
         "coursesapi": {},
-        "userapi": {},
-        "purchaseCourseGraphQL": {}
+        "userapi": {}
       },
       "hosting": {
         "amplifyhosting": {

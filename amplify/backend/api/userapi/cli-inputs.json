@@ -1,9 +1,9 @@
 {
   "version": 1,
   "paths": {
-    "/courses/{courseID}": {
-      "name": "/courses/{courseID}",
-      "lambdaFunction": "UserAccessFunction",
+    "/courses": {
+      "name": "/courses",
+      "lambdaFunction": "purchasecourse29f8e37c",
       "permissions": {
         "setting": "open"
       }
